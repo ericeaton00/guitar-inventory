@@ -134,3 +134,4 @@ Refresh your GitHub Pages URL and the card shows up. That's the whole loop.
   `data/guitars.json`, `data/amps.json`, etc. and update `app.js` to fetch and merge them.
 # guitar-inventory
 # guitar-inventory
+# guitar-inventory
