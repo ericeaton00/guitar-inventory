@@ -133,3 +133,4 @@ Refresh your GitHub Pages URL and the card shows up. That's the whole loop.
 - **Multiple category files**: if `inventory.json` gets long, you could split it into
   `data/guitars.json`, `data/amps.json`, etc. and update `app.js` to fetch and merge them.
 # guitar-inventory
+# guitar-inventory
