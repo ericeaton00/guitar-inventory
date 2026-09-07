@@ -1,56 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Shop Ledger — Gear Inventory</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85); background-color: #ffffff}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85); background-color: #ffffff}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85); min-height: 13.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: #b3b3b3}
+    span.s3 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {font: 11.0px Times; font-kerning: none}
+    span.s5 {font: 11.0px 'Helvetica Neue'; font-kerning: none}
+    span.s6 {font: 11.0px 'Times New Roman'; font-kerning: none}
+    span.s7 {font-kerning: none; background-color: #ffffff}
+    span.s8 {font: 13.0px Menlo; font-kerning: none}
+  </style>
 </head>
 <body>
-
-  <header class="ledger-header">
-    <div class="header-inner">
-      <p class="eyebrow">workshop inventory</p>
-      <h1>The Shop Ledger</h1>
-      <p class="subhead">Every guitar, amp, part, and tool worth tracking — with what it cost, what it's worth, and why it's here.</p>
-    </div>
-  </header>
-
-  <main>
-    <section class="control-strip">
-      <div class="switch" id="categorySwitch" role="tablist" aria-label="Filter by category">
-        <div class="switch-indicator" id="switchIndicator"></div>
-        <button class="switch-pos active" data-cat="all" role="tab" aria-selected="true">All</button>
-        <button class="switch-pos" data-cat="guitar" role="tab" aria-selected="false">Guitars</button>
-        <button class="switch-pos" data-cat="amp" role="tab" aria-selected="false">Amps</button>
-        <button class="switch-pos" data-cat="part" role="tab" aria-selected="false">Parts</button>
-        <button class="switch-pos" data-cat="equipment" role="tab" aria-selected="false">Equipment</button>
-      </div>
-
-      <div class="search-wrap">
-        <input type="text" id="searchInput" placeholder="Search name, brand, model, tag…" autocomplete="off">
-        <select id="sortSelect">
-          <option value="name">Sort: Name</option>
-          <option value="value-desc">Sort: Value (high→low)</option>
-          <option value="value-asc">Sort: Value (low→high)</option>
-          <option value="year-desc">Sort: Newest</option>
-        </select>
-      </div>
-    </section>
-
-    <section class="totals-strip" id="totalsStrip"></section>
-
-    <section class="grid" id="cardGrid"></section>
-
-    <p class="empty-state" id="emptyState" hidden>Nothing here yet. Add an entry to <code>data/inventory.json</code> and it'll show up on next commit.</p>
-  </main>
-
-  <footer>
-    <p>Edit <code>data/inventory.json</code> to add gear. Drop photos in <code>/images</code>. Commit, push, done.</p>
-  </footer>
-
-  <script src="app.js"></script>
+<p class="p1"><span class="s1">workshop inventory</span></p>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>The Shop Ledger</b></span></h1>
+<p class="p1"><span class="s1">Every guitar, amp, part, and tool worth tracking.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">All</span><span class="s3"> </span><span class="s2">Guitars</span><span class="s3"> </span><span class="s2">Amps</span><span class="s3"> </span><span class="s2">Parts</span><span class="s3"> </span><span class="s2">Equipment</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">          </span></span><span class="s4">Sort: Name</span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">          </span></span><span class="s1">Sort: Value (high</span><span class="s6">→</span><span class="s1">low)</span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">          </span></span><span class="s1">Sort: Value (low</span><span class="s6">→</span><span class="s1">high)</span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">          </span></span><span class="s1">Sort: Newest</span></p>
+<p class="p7"><span class="s7"><span class="Apple-converted-space">        </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">Edit </span><span class="s8">data/inventory.json</span><span class="s1"> to add gear. Drop photos in </span><span class="s8">/images</span><span class="s1">. Commit, push, done.</span></p>
 </body>
 </html>
