@@ -28,9 +28,9 @@
     "price_notes": "Traded for Classic Vibe.",
     "current_value_estimate": 250,
     "images": [
-      "images/Partscaster_body.jpeg",
-      "images/Partscaster_front.jpeg",
-      "images/Partscaster_headstock.jpeg"
+    "images/Partscaster_body.jpeg",
+    "images/Partscaster_front.jpeg",
+    "images/Partscaster_headstock.jpeg"
     ],
     "notes": "First full scratch build. Alder body, maple neck, rosewood board. Still needs final setup and pickguard routing.",
     "tags": ["build-in-progress", "electric"]
