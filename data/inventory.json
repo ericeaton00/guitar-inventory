@@ -15,6 +15,7 @@
     "notes": "First full scratch build. Alder body, maple neck, rosewood board. Still needs final setup and pickguard routing.",
     "tags": ["build-in-progress", "electric"]
   },
+  {
     "id": "guitar-002",
     "category": "guitar",
     "name": "Partscaster S-Style Electric Guitar",
@@ -40,7 +41,7 @@
     "name": "Boss Katana 50 MkII",
     "brand": "Boss",
     "model": "Katana 50 MkII",
-    "year": ,
+    "year": null,
     "serial": "",
     "condition": "Excellent",
     "price_paid": 300,
