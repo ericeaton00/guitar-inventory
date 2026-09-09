@@ -46,16 +46,31 @@ function sortItems(items, mode) {
   }
 }
 
+function getImageList(item) {
+  if (Array.isArray(item.images) && item.images.length) return item.images;
+  if (item.image) return [item.image];
+  return [];
+}
+
 function cardTemplate(item) {
   const catClass = item.category || "equipment";
   const catLabel = CATEGORY_LABELS[item.category] || item.category;
-  const imageBlock = item.image
-    ? `<img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.closest('.card-image').innerHTML='No image yet'">`
+  const images = getImageList(item);
+
+  const mainImageBlock = images.length
+    ? `<img src="${images[0]}" alt="${item.name}" loading="lazy" onerror="this.closest('.card-image').innerHTML='No image yet'">`
     : "No image yet";
+
+  const thumbStrip = images.length > 1
+    ? `<div class="thumb-strip">
+        ${images.map((src, i) => `<button class="thumb ${i === 0 ? "active" : ""}" data-src="${src}"><img src="${src}" alt="" loading="lazy"></button>`).join("")}
+      </div>`
+    : "";
 
   return `
     <article class="card">
-      <div class="card-image">${imageBlock}</div>
+      <div class="card-image">${mainImageBlock}</div>
+      ${thumbStrip}
       <div class="card-body">
         <span class="tag ${catClass}">${catLabel}</span>
         <h3 class="card-name">${item.name}</h3>
@@ -125,9 +140,18 @@ function initSwitch() {
       render();
     });
   });
-  // set initial indicator position once layout is ready
   window.requestAnimationFrame(() => moveIndicator(document.querySelector(".switch-pos.active")));
 }
+
+document.getElementById("cardGrid").addEventListener("click", (e) => {
+  const thumb = e.target.closest(".thumb");
+  if (!thumb) return;
+  const card = thumb.closest(".card");
+  const mainImg = card.querySelector(".card-image img");
+  if (mainImg) mainImg.src = thumb.dataset.src;
+  card.querySelectorAll(".thumb").forEach((t) => t.classList.remove("active"));
+  thumb.classList.add("active");
+});
 
 document.getElementById("searchInput").addEventListener("input", render);
 document.getElementById("sortSelect").addEventListener("change", render);
