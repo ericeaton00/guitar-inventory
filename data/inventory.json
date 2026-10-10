@@ -28,9 +28,9 @@
     "price_notes": "Traded for Classic Vibe.",
     "current_value_estimate": 250,
     "images": [
-    "images/Partscaster_body.jpeg",
-    "images/Partscaster_front.jpeg",
-    "images/Partscaster_headstock.jpeg"
+     "images/Partscaster_body.jpeg",
+     "images/Partscaster_front.jpeg",
+     "images/Partscaster_headstock.jpeg"
     ],
     "notes": "First full scratch build. Alder body, maple neck, rosewood board. Still needs final setup and pickguard routing.",
     "tags": ["build-in-progress", "electric"]
@@ -50,37 +50,5 @@
     "image": "images/example-amp.jpg",
     "notes": "Primary practice amp. ",
     "tags": ["practice-amp"]
-  },
-  {
-    "id": "part-001",
-    "category": "part",
-    "name": "Vintage-style Tremolo Bridge",
-    "brand": "Callaham",
-    "model": "Vintage S",
-    "year": 2023,
-    "serial": "",
-    "condition": "New",
-    "price_paid": 165,
-    "price_notes": "Direct from Callaham, includes trem block.",
-    "current_value_estimate": 165,
-    "image": "images/example-bridge.jpg",
-    "notes": "Reserved for the S-Style #1 build.",
-    "tags": ["hardware", "in-stock"]
-  },
-  {
-    "id": "equipment-001",
-    "category": "equipment",
-    "name": "Digital Calipers",
-    "brand": "Mitutoyo",
-    "model": "500-196-30",
-    "year": 2022,
-    "serial": "",
-    "condition": "Good",
-    "price_paid": 55,
-    "price_notes": "",
-    "current_value_estimate": 45,
-    "image": "images/example-calipers.jpg",
-    "notes": "Used for nut slot depth and fretboard radius checks.",
-    "tags": ["tool"]
   }
 ]
